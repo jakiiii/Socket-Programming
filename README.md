@@ -75,7 +75,7 @@ Transmit Data				User					Revieve Data
 ------------------------------------------------------------------------|
 | Segment sequencing			| No sequencing			|
 ------------------------------------------------------------------------|
-| Acknowledgement				| No acknowledgement	|
+| Acknowledgement			| No acknowledgement		|
 -------------------------------------------------------------------------
 ```
 
