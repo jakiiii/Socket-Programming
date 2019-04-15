@@ -18,7 +18,7 @@ Transmit Data				User					Revieve Data
 	|				Data Link (Layer - 2)				|
 	|				Physical (Layer - 1)				|
 	|													|
-	|-------------------Physical Link--------------------
+	|------------------ Physical Link ------------------|
 ```
 
 **Allication (Layer - 7):** Application is a protocal like STP, HTTP, HTTPS etc.
