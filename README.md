@@ -14,11 +14,10 @@ Transmit Data				User					Revieve Data
 	|				Presentation (Layer - 6)			|
 	|				Seassion (Layer - 5)				|
 	|				Transport (Layer - 4)				|
-	|				Network (Layer - 3)					|
+	|				Network (Layer - 3)				|
 	|				Data Link (Layer - 2)				|
 	|				Physical (Layer - 1)				|
-	|													|
-	|------------------ Physical Link ------------------|
+	|-------------------------------- Physical Link --------------------------------|
 ```
 
 **Allication (Layer - 7):** Application is a protocal like STP, HTTP, HTTPS etc.
@@ -41,21 +40,21 @@ Transmit Data				User					Revieve Data
 **Socket Programming:** Socket programming of connecting two node on a network to communicate to each other. Server form to listener socket while client reach out to the server.
 
 ```
-----------					----------
-| Server |					| Client |
-----------					----------
-	|							|
-  Socket						|
-	|							|
-  Setsockopt					|
-    |							|
-  Bind							|
-    |							|
-  Listen <------------------- Connect
-    |							|
-  Accept						|
-    |							|
-  Send/Recv <---------------> Send/Recv
+----------			----------
+| Server |			| Client |
+----------			----------
+    |				    |
+  Socket			    |
+    |				    |
+  Setsockopt			    |
+    |				    |
+  Bind				    |
+    |				    |
+  Listen <---------------------- Connect
+    |				    |
+  Accept			    |
+    |				    |
+  Send/Recv <-----------------> Send/Recv
 ``` 
 
 **TCP:** Transmission Control Protocal
@@ -63,21 +62,21 @@ Transmit Data				User					Revieve Data
 **UDP:** User Datagram Protocal
 
 ```
----------------------------------------------------------------------
-|				TCP				|			UDP						|
----------------------------------------------------------------------
-| Reliable						| Unreliable						|
----------------------------------------------------------------------
-| Connection Orinented			| Connectionless					|
----------------------------------------------------------------------
-| Segment retransmission and	| No windowing or retransmission	|
-| flow control through			|									|
-| windowing. 					|									|
----------------------------------------------------------------------
-| Segment sequencing			| No sequencing						|
----------------------------------------------------------------------
-| Acknowledgement				| No acknowledgement				|
----------------------------------------------------------------------
+-------------------------------------------------------------------------
+|		TCP			|		UDP		|
+-------------------------------------------------------------------------
+| Reliable				| Unreliable			|
+------------------------------------------------------------------------|
+| Connection Orinented			| Connectionless		|
+------------------------------------------------------------------------|
+| Segment retransmission and		| No windowing or retransmission|
+| flow control through			|				|
+| windowing. 				|				|
+------------------------------------------------------------------------|
+| Segment sequencing			| No sequencing			|
+------------------------------------------------------------------------|
+| Acknowledgement				| No acknowledgement	|
+-------------------------------------------------------------------------
 ```
 
 **Raw Sockets:** Raw socket is an internet socket that allows direct sending and receiving of internet protocal packets without any protocal (TCP/UDP) specific transport layer formating. Example, RAW SOCKET is used for DDoS (Distribute Denial of Server Attack) attack.
