@@ -21,3 +21,5 @@ IP_HDRINCL  -> Specific information protocol. Include the Header IP.
 """
 s.setsockopt(IPPROTO_IP, IP_HDRINCL, 1)
 print(s.recvfrom(65565))
+
+s.close()
