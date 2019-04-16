@@ -5,7 +5,7 @@ host = "127.0.0.1"
 port = 9999
 
 """
-AP_INT means its IPv4, SOCK_STREAM indicates TCP and 0 is specific protocol
+AP_INT means its IPv4, SOCK_STREAM indicates TCP and 0 is default protocol
 """
 s = socket(AF_INET, SOCK_STREAM, 0)  # create a tcp socket
 s.bind((host, port))  # bind a connection with client

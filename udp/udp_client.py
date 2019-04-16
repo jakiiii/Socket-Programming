@@ -4,7 +4,7 @@ from socket import *
 host_port = ("127.0.0.1", 9999)
 
 """
-AP_INT means its IPv4, SOCK_DGRAM indicates UDP and 0 is specific protocol
+AP_INT means its IPv4, SOCK_DGRAM indicates UDP and 0 is default protocol
 """
 s = socket(AF_INET, SOCK_DGRAM, 0)
 
