@@ -14,5 +14,10 @@ IPPROTO_ICMP is ICMP (Internet Control Message Protocol) packet.
 s = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP)  # create raw socket
 s.bind((host, 0))  # create connection
 
+"""
+setsockopt  -> Set socket option
+IPPROTO_IP  -> This IP protocol we using right now
+IP_HDRINCL  -> Specific information protocol. Include the Header IP.
+"""
 s.setsockopt(IPPROTO_IP, IP_HDRINCL, 1)
 print(s.recvfrom(65565))
