@@ -1,18 +1,18 @@
 # Socket Programming
 
-**Netowrk:** Network is computer and device connected ti cach other with to wireless (wi-fi / li-fi).
+**Network:** Network is computer and device connected ti each other with to wireless (wi-fi / li-fi).
 
 
 ### OSI MODEL
-**Open System Inetconnection**
+**Open System Interconnection**
 
 THE SEVEN LAYER OF OSI
 
 ```
-Transmit Data				User					Revieve Data
+Transmit Data				User					Receive Data
 	|				Application (Layer - 7)				|
 	|				Presentation (Layer - 6)			|
-	|				Seassion (Layer - 5)				|
+	|				Session (Layer - 5)				|
 	|				Transport (Layer - 4)				|
 	|				Network (Layer - 3)				|
 	|				Data Link (Layer - 2)				|
@@ -20,19 +20,19 @@ Transmit Data				User					Revieve Data
 	|-------------------------------- Physical Link --------------------------------|
 ```
 
-**Allication (Layer - 7):** Application is a protocal like STP, HTTP, HTTPS etc.
+**Allocation (Layer - 7):** Application is a protocol like STP, HTTP, HTTPS etc.
 
-**Presentation (Layer - 6):** Converting the data or extention in utc (mp4/mp3)
+**Presentation (Layer - 6):** Converting the data or extension in UTC (mp4/mp3)
 
-**Seassion (Layer - 5):** Its associte the user to clients.
+**Session (Layer - 5):** Its associate the user to clients.
 
-**Transport (Layer - 4):** This is the main protocal of TCP/UDC.
+**Transport (Layer - 4):** This is the main protocol of TCP/UDC.
 
-**Network (Layer - 3):** IP Protocal using the router.
+**Network (Layer - 3):** IP Protocol using the router.
 
-**Data Link (Layer - 2):** This is the SWITCH protocal layer.
+**Data Link (Layer - 2):** This is the SWITCH protocol layer.
 
-**Physical (Layer - 1):** Transfrom to data layer from digital data to anolock data.
+**Physical (Layer - 1):** Transform to data layer from digital data to analog data.
 
 
 **Socket:** Socket is the communication mechanism that allows clients / server to connect to each other with specific rule.
@@ -79,4 +79,4 @@ Transmit Data				User					Revieve Data
 -------------------------------------------------------------------------
 ```
 
-**Raw Sockets:** Raw socket is an internet socket that allows direct sending and receiving of internet protocal packets without any protocal (TCP/UDP) specific transport layer formating. Example, RAW SOCKET is used for DDoS (Distribute Denial of Server Attack) attack.
+**Raw Sockets:** Raw socket is an internet socket that allows direct sending and receiving of internet protocol packets without any protocol (TCP/UDP) specific transport layer formatting. Example, RAW SOCKET is used for DDoS (Distribute Denial of Server Attack) attack.
